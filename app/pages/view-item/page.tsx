@@ -43,7 +43,7 @@ export default function Product() {
                 alt="Product Image"
                 className="w-full h-full object-contain"
               />
-              <p className="text-sm font-light mt-6">
+              <p className="text-sm text-left font-light mt-6">
                 I'm a product description. I'm a great place to add more details
                 about your product such as sizing, material, care instructions
                 and cleaning instructions.
@@ -51,11 +51,11 @@ export default function Product() {
             </div>
             <div className="flex">{/* Thumbnail images */}</div>
           </div>
-          <div className="flex flex-col">
+          <div className="flex flex-col text-center">
             <h1 className="text-2xl font-semibold">{item?.name}</h1>
             {/* <p className="text-gray-500">SKU: {item?.id}</p> */}
             <p className="text-xl my-4">CAD ${item?.price}</p>
-            <div className="flex space-x-2 my-4">
+            <div className="flex justify-center space-x-2 my-4">
               {/* Color selection circles */}
               <button
                 className={`w-6 h-6 rounded-full ${
@@ -70,12 +70,12 @@ export default function Product() {
                 onClick={() => setSelectedColor("black")}
               />
             </div>
-            <div className="flex border border-gray-300 rounded my-4">
+            <div className="my-4">
               <button
                 onClick={() => setQuantity(Math.max(1, quantity - 1))}
                 className="p-2"
               >
-                <MinusIcon className="w-6 h-6" />
+                {/* <MinusIcon className="w-6 h-6" /> */}
               </button>
               <input
                 type="number"
@@ -85,7 +85,7 @@ export default function Product() {
                 min="1"
               />
               <button onClick={() => setQuantity(quantity + 1)} className="p-2">
-                <PlusIcon className="w-6 h-6" />
+                {/* <PlusIcon className="w-6 h-6" /> */}
               </button>
             </div>
             <button
@@ -95,15 +95,17 @@ export default function Product() {
               Add to Cart
             </button>
             {/* Product info, return & refund policy, etc. */}
-            <div className="mt-6 font-light">
+            <div className="text-left mt-6 font-light">
               <h1 className="uppercase">Product Info</h1>
               <p className="text-sm mt-4 max-w-md">
                 I'm a product detail. I'm a great place to add more information
                 about your product such as sizing, material, care and cleaning
-                instructions. This is also a great space to write what makes
-                this product special and how your customers can benefit from
-                this item.
+                instructions.
               </p>
+              <hr className="my-6"/>
+              <h1 className="mt-6 uppercase">Return & Refund Policy</h1>
+              <hr className="my-6"/>
+              <h1 className="mt-6 uppercase">Shipping Info</h1>
             </div>
           </div>
         </main>

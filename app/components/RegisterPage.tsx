@@ -8,7 +8,7 @@ export default function RegisterPage() {
     name: "",
     email: "",
     password: "",
-    isAdmin: false
+    isAdmin: false,
   });
   const registerUser = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -29,11 +29,11 @@ export default function RegisterPage() {
   };
   return (
     <>
-    <div className="flex justify-center">
-    <div className="border rounded-lg bg-pink-200 p-11 w-fit">
+      <div className="flex justify-center">
+        <div className="secondary-color p-12 w-fit">
           <div className="sm:mx-auto sm:w-full sm:max-w-sm">
-            <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
-              Register your account
+            <h2 className="mt-3 text-center text-2xl leading-9 tracking-tight text-gray-900 font-semibold">
+              Register Your Account
             </h2>
           </div>
 
@@ -42,7 +42,7 @@ export default function RegisterPage() {
               <div>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-medium leading-6 text-gray-900"
+                  className="block text-sm leading-6 text-gray-900"
                 >
                   Name
                 </label>
@@ -51,6 +51,7 @@ export default function RegisterPage() {
                     id="name"
                     name="name"
                     type="text"
+                    placeholder="  Your Name"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-800 sm:text-sm sm:leading-6"
                     value={data.name}
@@ -64,15 +65,16 @@ export default function RegisterPage() {
               <div>
                 <label
                   htmlFor="email"
-                  className="block text-sm font-medium leading-6 text-gray-900"
+                  className="block text-sm leading-6 text-gray-900"
                 >
-                  Email address
+                  Email Address
                 </label>
                 <div className="mt-2">
                   <input
                     id="email"
                     name="email"
                     type="email"
+                    placeholder="  Your Email"
                     autoComplete="email"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-800 sm:text-sm sm:leading-6"
@@ -88,7 +90,7 @@ export default function RegisterPage() {
                 <div className="flex items-center justify-between">
                   <label
                     htmlFor="password"
-                    className="block text-sm font-medium leading-6 text-gray-900"
+                    className="block text-sm leading-6 text-gray-900"
                   >
                     Password
                   </label>
@@ -98,6 +100,7 @@ export default function RegisterPage() {
                     id="password"
                     name="password"
                     type="password"
+                    placeholder="  Your Password"
                     autoComplete="current-password"
                     required
                     className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-800 sm:text-sm sm:leading-6"
@@ -120,7 +123,7 @@ export default function RegisterPage() {
             </form>
           </div>
         </div>
-    </div>
+      </div>
     </>
   );
 }
