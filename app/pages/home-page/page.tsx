@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from '@/app/components/Navbar'
 import ProductSlider from '@/app/components/ProductSlider'
 import {Product}  from '@/app/types/item';
+import Footer from '@/app/components/Footer';
 
 // Ok this is awesome
 const HomePage: React.FC = () => {
@@ -52,12 +53,50 @@ const HomePage: React.FC = () => {
   return (
     <div className='primary-color'>
       <Navbar />
-      <div className='flex justify-center'>
+      <div className="flex justify-center">
+        <div className="p-4 text-7xl max-w-3xl text-center uppercase">New Arrivals Are Here</div>
+      </div>
+      <div className="p-8 font-light text-center">Limited time price drop!</div>
+      <div className='flex justify-center px-20'>
         <div className='flex justify-center bg-slate-400 home-page-image-parent-div'>
           <img src="https://static.wixstatic.com/media/f37599a3250341ebb244554882b84860.jpg/v1/fill/w_1225,h_569,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/f37599a3250341ebb244554882b84860.jpg" alt="Product Inventory" width="980" height="455" className="home-page-image" ></img>
         </div>
       </div>
       <ProductSlider products={products} />
+      <div className="text-left ml-80 mr-80 p-12">
+        <h2 className="text-4xl uppercase">What We're All About</h2>
+        <h2 className="text-sm py-4 font-light">Made For Everyone</h2>
+        <div className="text-left">
+        <p className="text-sm font-light">
+          We founded Khangoora with one goal in mind: providing high-quality,
+          carefully developed products, made for everyone. Our passion for
+          excellence has driven us from the beginning and continues to propel us
+          going forward. We know that every item counts, and strive to make your
+          entire shopping experience as rewarding as possible. Don't settle for
+          anything but the best—check us out for yourself.
+        </p>
+        </div>
+      </div>
+      <div className="flex flex-row mt-40 max-w-5xl">
+        {/* <Image
+          src={beverage}
+          alt="beverage"
+          className=""
+          style={{ maxHeight: "460px", maxWidth: "420px" }}
+        /> */}
+        <div className="text-center px-12">
+          <h2 className="text-4xl uppercase pt-20">Student-Owned Business</h2>
+          <h2 className="text-sm py-4 font-light">Truly Top-Notch</h2>
+          <p className="text-sm text-center max-w-lg font-light">
+            At our core, we are a business owned and operated by students. Our
+            dedication to providing top-quality products and services is driven
+            by our commitment to excellence. We strive to offer unique and
+            innovative solutions, all while supporting student entrepreneurship
+            and creativity.
+          </p>
+        </div>
+      </div>
+      <Footer />
     </div>
   )
 }
