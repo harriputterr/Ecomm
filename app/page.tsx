@@ -9,8 +9,8 @@ import LoginRegister from './pages/login-register-page/page'
 export default function Home() {
   return (
     <main>
-      {/* <HomePage /> */}
-      <ShopPage />
+      <HomePage />
+      {/* <ShopPage /> */}
       {/* <img src={"https://raw.githubusercontent.com/harriputterr/Test-fetch-images/main/air-freshner2.webp"} alt='Air Freshner Image'/> */}
       {/* <CreateItemForm /> */}
       {/* <ViewItem /> */}

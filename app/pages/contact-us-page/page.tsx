@@ -2,6 +2,7 @@
 import Navbar from "@/app/components/Navbar";
 import Image from "next/image";
 import Footer from "@/app/components/Footer";
+import { browsing } from "@/app/assets/browsing";
 
 const Contact = () => {
     return (
@@ -22,12 +23,12 @@ const Contact = () => {
             <p className="text-sm mt-28 font-light">support@shopsphere.ca</p>
             <p className="text-sm mt-2 font-light">123-456-7890</p>
           </div>
-          {/* <Image
+          <Image
             src={browsing}
             alt="browsing"
             className=""
             style={{ maxHeight: 440, maxWidth: 490 }}
-          /> */}
+          />
         </div>
         <div className="flex flex-col justfiy-start max-w-sm text-sm mt-20 ml-60">
           <h2 className="text-xl uppercase">Opening Hours</h2>

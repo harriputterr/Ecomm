@@ -34,7 +34,7 @@ export default function DisplayItems() {
                                 {price > item.price ? 
                                 <>
                                     <button onClick={() => handleItemClick(item.id)} key={index} className='' >
-                                        <div className=' bg-gray-400 h-80 mt-10 mr-2'>
+                                        <div className='bg-gray-400 h-80 mt-10 mr-2'>
                                             <img src={item.listImageUrl[0]} height={247} width={247} />
                                             <div className='text-white p-2'>
                                                 <p>{item.name}</p>

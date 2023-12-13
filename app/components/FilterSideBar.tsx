@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { usePriceContext } from "@/app/contexts/filtered-price-state";
 
+
 const FilterByPrice: React.FC = () => {
   const { price, setPrice } = usePriceContext();
   const [isPriceCollapsed, setIsPriceCollapsed] = useState<boolean>(false);
@@ -50,7 +51,7 @@ const FilterByPrice: React.FC = () => {
       <hr className="my-3" />
 
       <div className="mb-4 filter-toggle">
-        <span className="text-left w-full filter-toggle-label">Color</span>
+        <span className="text-left w-full filter-toggle-label">Category</span>
         <button
           className="filter-toggle-icon"
           onClick={() => toggleCollapse("price")}
@@ -61,7 +62,7 @@ const FilterByPrice: React.FC = () => {
       <hr className="my-3" />
 
       <div className="mb-4 filter-toggle">
-        <span className="text-left w-full filter-toggle-label">Size</span>
+        <span className="text-left w-full filter-toggle-label">Color</span>
         <button
           className="filter-toggle-icon"
           onClick={() => toggleCollapse("price")}

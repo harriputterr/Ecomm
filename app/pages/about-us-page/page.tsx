@@ -13,7 +13,7 @@ const page = () => {
               A Shopping Experience Like No Other
             </h2>
             <p className="my-2 font-light">
-              Ever since we founded our store in 2000, we had one goal in mind:
+              Ever since we founded our store in 2023, we had one goal in mind:
               ensuring a consistent variety of fantastic items along with unique,
               limited edition and seasonal merchandise that fit any budget. We’re
               proud of how far we’ve come, and remain committed to adding more
@@ -32,11 +32,30 @@ const page = () => {
             <p className="font-light">Committed to your satisfaction</p>
           </div>
         </div>
-        <div className="flex flex-row items-center justify-center mt-16">
-          <div className="secondary-color p-52 m-4"></div>
-          <div className="secondary-color p-52 m-4"></div>
-          <div className="secondary-color p-52 m-4"></div>
+        <div className="flex flex-row items-center justify-center text-center mt-16">
+          <div className="secondary-color p-24 m-3">
+            <p>Harsingh Sekhon</p>
+          </div>
+          <div className="secondary-color p-24 m-3">
+            <p>Jaskaran Sran</p>
+          </div>
+          <div className="secondary-color p-24 m-3">
+            <p>Kevin Le Huu</p>
+          </div>
+          <div className="secondary-color p-24 m-3">
+            <p>Tristan Idolor</p>
+          </div>
+          <div className="secondary-color p-24 m-3">
+            <p>Troy Franks</p>
+          </div>
         </div>
+        {/* <div className="flex flex-row items-center justify-center mt-2">
+          <p className="mr-44">Harsingh Sekhon</p>
+          <p className="mr-44">Jaskaran Sran</p>
+          <p className="mr-44">Kevin Le Huu</p>
+          <p className="mr-44">Tristan Idolor</p>
+          <p>Troy Franks</p>
+        </div> */}
         <Footer />
       </main>
     );
